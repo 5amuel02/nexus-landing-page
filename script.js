@@ -30,14 +30,10 @@ function initPageLoader() {
     const loader = document.querySelector('.page-loader');
     if (!loader) return;
 
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            loader.classList.add('loaded');
-        }, 500);
-    });
-
-    // Failsafe: remove loader after 3 seconds
-    setTimeout(() => loader.classList.add('loaded'), 3000);
+    // Hide loader immediately after a short delay
+    setTimeout(() => {
+        loader.classList.add('loaded');
+    }, 300);
 }
 
 /* ---------- Scroll Progress Bar ---------- */
