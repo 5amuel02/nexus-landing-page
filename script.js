@@ -166,12 +166,7 @@ function initSubtitleAnimation() {
     subtitle.innerHTML = html;
 }
 
-@keyframes wordFade {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* wordFade animation is handled in CSS */
 
 /* ---------- Scroll Animations (Intersection Observer) ---------- */
 function initScrollAnimations() {
